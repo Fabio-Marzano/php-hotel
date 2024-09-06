@@ -72,7 +72,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($hotels as $hotel) { ?>
+                        <?php foreach($hotels as $hotel){ ?>
                             <tr>
                                 <td>
                                     <?php echo $hotel['name']; ?>
@@ -81,13 +81,13 @@
                                     <?php echo $hotel['description']; ?>
                                 </td>
                                 <td>
-                                    <?php echo $hotel['parking']; ?>
+                                    <?php echo $hotel['parking'] ? 'Si' : 'No'; ?>
                                 </td>
                                 <td>
                                     <?php echo $hotel['vote']; ?>
                                 </td>
                                 <td>
-                                    <?php echo $hotel['distance_to_center']; ?>
+                                    <?php echo $hotel['distance_to_center']; ?>Km
                                 </td>
                             </tr>
                         <?php } ?>
